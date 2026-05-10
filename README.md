@@ -2,22 +2,18 @@
 **An Advanced Web Panel • Built on SagerNet/Sing-Box**
 
 ![](https://img.shields.io/github/v/release/ClashConnectRules/s-ui.svg)
-![S-UI Container](https://img.shields.io/badge/container-ghcr.io%2Fclashconnectrules%2Fs--ui-blue)
+[![Container](https://img.shields.io/badge/container-ghcr.io%2Fclashconnectrules%2Fs--ui-blue)](https://github.com/ClashConnectRules/s-ui/pkgs/container/s-ui)
 [![Go Report Card](https://goreportcard.com/badge/github.com/ClashConnectRules/s-ui)](https://goreportcard.com/report/github.com/ClashConnectRules/s-ui)
 [![Downloads](https://img.shields.io/github/downloads/ClashConnectRules/s-ui/total.svg)](https://img.shields.io/github/downloads/ClashConnectRules/s-ui/total.svg)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 > **Disclaimer:** This project is only for personal learning and communication, please do not use it for illegal purposes, please do not use it in a production environment
 
-**If you think this project is helpful to you, you may wish to give a**:star2:
+This fork is maintained at [ClashConnectRules/s-ui](https://github.com/ClashConnectRules/s-ui). Install scripts, release downloads, Docker examples, and Go module paths in this repository point to this fork.
+
+If you think this project is helpful, you may wish to give it a star.
 
 **Want to contribute?** See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, coding conventions, testing, and the pull request process.
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/alireza7)
-
-<a href="https://nowpayments.io/donation/alireza7" target="_blank" rel="noreferrer noopener">
-   <img src="https://nowpayments.io/images/embeds/donation-button-white.svg" alt="Crypto donation button by NOWPayments">
-</a>
 
 ## Quick Overview
 | Features                               |      Enable?       |
@@ -68,22 +64,22 @@ bash <(curl -Ls https://raw.githubusercontent.com/ClashConnectRules/s-ui/main/in
 3. Run `install-windows.bat` as Administrator
 4. Follow the installation wizard
 
-## Install legacy Version
+## Install Legacy Version
 
-**Step 1:** To install your desired legacy version, add the version to the end of the installation command. e.g., ver `1.0.0`:
+To install a specific release, set the version and pass it to the install script. Example:
 
 ```sh
 VERSION=1.0.0 && bash <(curl -Ls https://raw.githubusercontent.com/ClashConnectRules/s-ui/$VERSION/install.sh) $VERSION
 ```
 
-## Manual installation
+## Manual Installation
 
 ### Linux/macOS
-1. Get the latest version of S-UI based on your OS/Architecture from GitHub: [https://github.com/ClashConnectRules/s-ui/releases/latest](https://github.com/ClashConnectRules/s-ui/releases/latest)
-2. **OPTIONAL** Get the latest version of `s-ui.sh` [https://raw.githubusercontent.com/ClashConnectRules/s-ui/main/s-ui.sh](https://raw.githubusercontent.com/ClashConnectRules/s-ui/main/s-ui.sh)
-3. **OPTIONAL** Copy `s-ui.sh` to /usr/bin/ and run `chmod +x /usr/bin/s-ui`.
-4. Extract s-ui tar.gz file to a directory of your choice and navigate to the directory where you extracted the tar.gz file.
-5. Copy *.service files to /etc/systemd/system/ and run `systemctl daemon-reload`.
+1. Get the latest version of S-UI based on your OS/Architecture from [GitHub Releases](https://github.com/ClashConnectRules/s-ui/releases/latest).
+2. Optional: get the latest version of [`s-ui.sh`](https://raw.githubusercontent.com/ClashConnectRules/s-ui/main/s-ui.sh).
+3. Optional: copy `s-ui.sh` to `/usr/bin/` and run `chmod +x /usr/bin/s-ui`.
+4. Extract the `s-ui` archive to a directory of your choice and navigate to that directory.
+5. Copy `*.service` files to `/etc/systemd/system/` and run `systemctl daemon-reload`.
 6. Enable autostart and start S-UI service using `systemctl enable s-ui --now`
 7. Start sing-box service using `systemctl enable sing-box --now`
 
@@ -109,7 +105,7 @@ rm -fr /usr/local/s-ui
 rm /usr/bin/s-ui
 ```
 
-## Install using Docker
+## Install Using Docker
 
 <details>
    <summary>Click for details</summary>
@@ -118,7 +114,7 @@ rm /usr/bin/s-ui
 
 **Step 1:** Install Docker
 
-```shell
+```sh
 curl -fsSL https://get.docker.com | sh
 ```
 
@@ -126,7 +122,7 @@ curl -fsSL https://get.docker.com | sh
 
 > Docker compose method
 
-```shell
+```sh
 mkdir s-ui && cd s-ui
 wget -q https://raw.githubusercontent.com/ClashConnectRules/s-ui/main/docker-compose.yml
 docker compose up -d
@@ -134,7 +130,7 @@ docker compose up -d
 
 > Use docker
 
-```shell
+```sh
 mkdir s-ui && cd s-ui
 docker run -itd \
     -p 2095:2095 -p 2096:2096 -p 443:443 -p 80:80 \
@@ -146,42 +142,44 @@ docker run -itd \
 
 > Build your own image
 
-```shell
-git clone https://github.com/ClashConnectRules/s-ui
+```sh
+git clone https://github.com/ClashConnectRules/s-ui.git
+cd s-ui
 git submodule update --init --recursive
 docker build -t s-ui .
 ```
 
 </details>
 
-## Manual run ( contribution )
+## Manual Run
 
 <details>
    <summary>Click for details</summary>
 
 ### Build and run whole project
-```shell
+```sh
 ./runSUI.sh
 ```
 
 ### Clone the repository
-```shell
+```sh
 # clone repository
-git clone https://github.com/ClashConnectRules/s-ui
+git clone https://github.com/ClashConnectRules/s-ui.git
+cd s-ui
 # clone submodules
 git submodule update --init --recursive
 ```
 
 
-### - Frontend
+### Frontend
 
-Visit [s-ui-frontend](https://github.com/alireza0/s-ui-frontend) for frontend code
+The frontend is tracked as the `frontend` submodule. Its upstream source is [s-ui-frontend](https://github.com/alireza0/s-ui-frontend).
 
-### - Backend
+### Backend
 > Please build frontend once before!
 
 To build backend:
-```shell
+```sh
 # remove old frontend compiled files
 rm -fr web/html/*
 # apply new frontend compiled files
@@ -191,7 +189,7 @@ go build -o sui main.go
 ```
 
 To run backend (from root folder of repository):
-```shell
+```sh
 ./sui
 ```
 
