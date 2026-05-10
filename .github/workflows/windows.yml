@@ -15,6 +15,8 @@ on:
       - "*"
     paths:
       - '.github/workflows/windows.yml'
+      - '.gitmodules'
+      - 'frontend'
       - 'frontend/**'
       - '**.go'
       - 'go.mod'
