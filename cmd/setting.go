@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/alireza0/s-ui/config"
-	"github.com/alireza0/s-ui/database"
-	"github.com/alireza0/s-ui/service"
+	"github.com/ClashConnectRules/s-ui/config"
+	"github.com/ClashConnectRules/s-ui/database"
+	"github.com/ClashConnectRules/s-ui/service"
 
 	"github.com/shirou/gopsutil/v4/net"
 )

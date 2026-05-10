@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/alireza0/s-ui/config"
-	"github.com/alireza0/s-ui/logger"
-	"github.com/alireza0/s-ui/middleware"
-	"github.com/alireza0/s-ui/network"
-	"github.com/alireza0/s-ui/service"
+	"github.com/ClashConnectRules/s-ui/config"
+	"github.com/ClashConnectRules/s-ui/logger"
+	"github.com/ClashConnectRules/s-ui/middleware"
+	"github.com/ClashConnectRules/s-ui/network"
+	"github.com/ClashConnectRules/s-ui/service"
 
 	"github.com/gin-gonic/gin"
 )

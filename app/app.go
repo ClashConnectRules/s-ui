@@ -3,14 +3,14 @@ package app
 import (
 	"log"
 
-	"github.com/alireza0/s-ui/config"
-	"github.com/alireza0/s-ui/core"
-	"github.com/alireza0/s-ui/cronjob"
-	"github.com/alireza0/s-ui/database"
-	"github.com/alireza0/s-ui/logger"
-	"github.com/alireza0/s-ui/service"
-	"github.com/alireza0/s-ui/sub"
-	"github.com/alireza0/s-ui/web"
+	"github.com/ClashConnectRules/s-ui/config"
+	"github.com/ClashConnectRules/s-ui/core"
+	"github.com/ClashConnectRules/s-ui/cronjob"
+	"github.com/ClashConnectRules/s-ui/database"
+	"github.com/ClashConnectRules/s-ui/logger"
+	"github.com/ClashConnectRules/s-ui/service"
+	"github.com/ClashConnectRules/s-ui/sub"
+	"github.com/ClashConnectRules/s-ui/web"
 
 	"github.com/op/go-logging"
 )

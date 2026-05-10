@@ -1,9 +1,9 @@
 package cronjob
 
 import (
-	"github.com/alireza0/s-ui/database"
-	"github.com/alireza0/s-ui/logger"
-	"github.com/alireza0/s-ui/service"
+	"github.com/ClashConnectRules/s-ui/database"
+	"github.com/ClashConnectRules/s-ui/logger"
+	"github.com/ClashConnectRules/s-ui/service"
 )
 
 type DepleteJob struct {

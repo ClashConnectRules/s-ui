@@ -3,7 +3,7 @@ package api
 import (
 	"encoding/gob"
 
-	"github.com/alireza0/s-ui/database/model"
+	"github.com/ClashConnectRules/s-ui/database/model"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

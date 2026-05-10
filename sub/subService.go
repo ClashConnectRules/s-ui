@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alireza0/s-ui/database"
-	"github.com/alireza0/s-ui/database/model"
-	"github.com/alireza0/s-ui/service"
-	"github.com/alireza0/s-ui/util"
+	"github.com/ClashConnectRules/s-ui/database"
+	"github.com/ClashConnectRules/s-ui/database/model"
+	"github.com/ClashConnectRules/s-ui/service"
+	"github.com/ClashConnectRules/s-ui/util"
 )
 
 type SubService struct {

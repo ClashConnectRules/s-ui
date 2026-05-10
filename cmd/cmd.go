@@ -6,8 +6,8 @@ import (
 	"os"
 	"runtime/debug"
 
-	"github.com/alireza0/s-ui/cmd/migration"
-	"github.com/alireza0/s-ui/config"
+	"github.com/ClashConnectRules/s-ui/cmd/migration"
+	"github.com/ClashConnectRules/s-ui/config"
 )
 
 func ParseCmd() {
