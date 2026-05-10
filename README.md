@@ -36,9 +36,9 @@ If you think this project is helpful, you may wish to give it a star.
 
 ## Screenshots
 
-!["Main"](https://github.com/alireza0/s-ui-frontend/raw/main/media/main.png)
+!["Main"](https://github.com/ClashConnectRules/s-ui-frontend/raw/main/media/main.png)
 
-[Other UI Screenshots](https://github.com/alireza0/s-ui-frontend/blob/main/screenshots.md)
+[Other UI Screenshots](https://github.com/ClashConnectRules/s-ui-frontend/blob/main/screenshots.md)
 
 ## API Documentation
 
@@ -173,7 +173,7 @@ git submodule update --init --recursive
 
 ### Frontend
 
-The frontend is tracked as the `frontend` submodule. Its upstream source is [s-ui-frontend](https://github.com/alireza0/s-ui-frontend).
+The frontend is tracked as the `frontend` submodule. Its upstream source is [s-ui-frontend](https://github.com/ClashConnectRules/s-ui-frontend).
 
 ### Backend
 > Please build frontend once before!
