@@ -13,16 +13,6 @@ on:
       - main
     tags:
       - "*"
-    paths:
-      - '.github/workflows/release.yml'
-      - '.gitmodules'
-      - 'frontend'
-      - 'frontend/**'
-      - '**.sh'
-      - '**.go'
-      - 'go.mod'
-      - 'go.sum'
-      - 's-ui.service'
 
 permissions:
   contents: write
