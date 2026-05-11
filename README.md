@@ -9,7 +9,9 @@
 
 > **Disclaimer:** This project is only for personal learning and communication, please do not use it for illegal purposes, please do not use it in a production environment
 
-This fork is maintained at [ClashConnectRules/s-ui](https://github.com/ClashConnectRules/s-ui). Install scripts, release downloads, Docker examples, and Go module paths in this repository point to this fork.
+This fork is maintained at [ClashConnectRules/s-ui](https://github.com/ClashConnectRules/s-ui). Install scripts, release downloads, Docker examples, Go module paths, and frontend source links in this repository point to this fork.
+
+The frontend source has been restored under [ClashConnectRules/s-ui-frontend](https://github.com/ClashConnectRules/s-ui-frontend) and is tracked here as the `frontend` submodule.
 
 If you think this project is helpful, you may wish to give it a star.
 
@@ -31,8 +33,7 @@ If you think this project is helpful, you may wish to give it a star.
 | Platform | Architecture | Status |
 |----------|--------------|---------|
 | Linux    | amd64, arm64, armv7, armv6, armv5, 386, s390x | ✅ Supported |
-| Windows  | amd64, 386, arm64 | ✅ Supported |
-| macOS    | amd64, arm64 | 🚧 Experimental |
+| Windows  | amd64, arm64 | ✅ Supported |
 
 ## Screenshots
 
@@ -53,7 +54,7 @@ If you think this project is helpful, you may wish to give it a star.
 
 ## Install & Upgrade to Latest Version
 
-### Linux/macOS
+### Linux
 ```sh
 bash <(curl -Ls https://raw.githubusercontent.com/ClashConnectRules/s-ui/main/install.sh)
 ```
@@ -74,7 +75,7 @@ VERSION=1.0.0 && bash <(curl -Ls https://raw.githubusercontent.com/ClashConnectR
 
 ## Manual Installation
 
-### Linux/macOS
+### Linux
 1. Get the latest version of S-UI based on your OS/Architecture from [GitHub Releases](https://github.com/ClashConnectRules/s-ui/releases/latest).
 2. Optional: get the latest version of [`s-ui.sh`](https://raw.githubusercontent.com/ClashConnectRules/s-ui/main/s-ui.sh).
 3. Optional: copy `s-ui.sh` to `/usr/bin/` and run `chmod +x /usr/bin/s-ui`.
@@ -175,8 +176,17 @@ git submodule update --init --recursive
 
 The frontend is tracked as the `frontend` submodule. Its upstream source is [s-ui-frontend](https://github.com/ClashConnectRules/s-ui-frontend).
 
+To build frontend manually:
+
+```sh
+cd frontend
+npm install
+npm run build
+cd ..
+```
+
 ### Backend
-> Please build frontend once before!
+> Please build frontend once before building backend manually.
 
 To build backend:
 ```sh
